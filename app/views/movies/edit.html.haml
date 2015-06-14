@@ -1,0 +1,6 @@
+-# in app/views/movies/edit.html.haml
+%h1 Edit Movie
+
+= form_tag movie_path(@movie), :method => :put do
+  = render :partial => 'movie_form'
+  = submit_tag 'Save Changes'

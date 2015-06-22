@@ -52,6 +52,12 @@ group :test do
   gem 'simplecov', :require => false
 end
 
+group :production do
+  # make sure the following gems are in your production group:
+  gem 'pg'              # use PostgreSQL in production (Heroku)
+  gem 'rails_12factor'  # Heroku-specific production settings
+end
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
